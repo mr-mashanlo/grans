@@ -1,0 +1,28 @@
+.accordion
+
+  &__header
+    padding: 2rem 5rem 2rem 0
+    font-size: 2rem
+    cursor: pointer
+    position: relative
+    @media ( min-width: 640px )
+      padding: 2rem 6rem 2rem 2rem
+
+  &__content
+    padding: 1rem
+    @media ( min-width: 640px )
+      padding: 0 2rem 2rem 2rem
+
+  &__icon
+    width: 2.5rem
+    height: 2.5rem
+    position: absolute
+    top: calc(50% - 1.25rem)
+    right: 2rem
+    transition: .5s
+    path
+      fill: $accent
+      transition: .5s
+
+  .open .accordion__icon
+    transform: rotate(45deg)
